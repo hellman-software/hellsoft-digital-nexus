@@ -1,14 +1,19 @@
 import { useState, useEffect } from "react"
 import { Link, useLocation } from "react-router-dom"
-import { Menu, X, Code2 } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { useTheme } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const location = useLocation()
+  const { theme } = useTheme()
+
+  // Determine if we should show dark logo
+  const isDarkMode = theme === "dark" || (theme === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,15 +44,16 @@ export function Header() {
           {/* Logo */}
           <Link 
             to="/" 
-            className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors"
+            className="flex items-center transition-opacity hover:opacity-80"
           >
-            <div className="relative">
-              <Code2 className="h-8 w-8 text-primary" />
-              <div className="absolute inset-0 bg-primary/20 blur-lg rounded-full" />
-            </div>
-            <span className="text-xl font-bold bg-gradient-tech bg-clip-text text-transparent">
-              Hellsoft
-            </span>
+            <img
+              src={isDarkMode 
+                ? "/lovable-uploads/bb3c6fd3-d787-43d0-ad53-caadd4863029.png"
+                : "/lovable-uploads/1fb19cc6-1d0b-4270-8eea-417a49abf666.png"
+              }
+              alt="Hellsoft Logo"
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
