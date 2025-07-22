@@ -7,22 +7,22 @@ export function Footer() {
   const socialLinks = [
     {
       name: "GitHub",
-      href: "https://github.com/your-username",
+      href: "https://github.com/ErikHellman",
       icon: Github,
     },
     {
       name: "LinkedIn", 
-      href: "https://linkedin.com/in/your-profile",
+      href: "https://linkedin.com/in/ErikHellman",
       icon: Linkedin,
     },
     {
       name: "Email",
-      href: "mailto:contact@hellsoft.com",
+      href: "mailto:erik.hellman@hellsoft.se",
       icon: Mail,
     },
     {
       name: "Phone",
-      href: "tel:+1234567890",
+      href: "tel:+46705777477",
       icon: Phone,
     },
   ]
