@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { TechCard } from "@/components/ui/tech-card"
 import heroImage from "@/assets/hero-bg.jpg"
-import profileImage from "@/assets/profile-tech.jpg"
 
 export default function Home() {
   const specialties = [
@@ -77,9 +76,9 @@ export default function Home() {
             <div className="mb-8 flex justify-center">
               <div className="relative">
                 <img
-                  src={profileImage}
-                  alt="Software Engineer"
-                  className="w-32 h-32 rounded-full border-4 border-primary/20 shadow-glow"
+                  src="/lovable-uploads/651b9e9a-074d-438a-a0a0-488b27ee2115.png"
+                  alt="Erik Hellman - Software Engineer"
+                  className="w-32 h-32 rounded-full border-4 border-primary/20 shadow-glow object-cover"
                 />
                 <div className="absolute inset-0 rounded-full bg-gradient-tech opacity-20" />
               </div>
