@@ -12,14 +12,8 @@
   "categories": ["business", "productivity", "technology"],
   "icons": [
     {
-      "src": "/icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/icon-512x512.png", 
-      "sizes": "512x512",
+      "src": "/lovable-uploads/7dd5dd1e-1b19-4df6-87bd-18b5d916c1f3.png",
+      "sizes": "176x176",
       "type": "image/png",
       "purpose": "any maskable"
     }
