@@ -24,7 +24,7 @@ const projects = [
   },
   {
     name: "Snackis Chatbot Client",
-    description: "A modern chatbot client implementation with advanced conversation capabilities and user-friendly interface.",
+    description: "A modern chatbot client running locally in your browser.",
     url: "https://github.com/ErikHellman/snackis-chatbot-client",
     stars: 0,
     forks: 0,

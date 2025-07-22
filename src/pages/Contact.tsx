@@ -8,29 +8,29 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "contact@hellsoft.com",
-      href: "mailto:contact@hellsoft.com",
+      value: "erik.hellman@hellsoft.se",
+      href: "mailto:erik.hellman@hellsoft.se",
       description: "Drop me a line for project inquiries"
     },
     {
       icon: Phone, 
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+46 (0)705 777-477",
+      href: "tel:+46705777477",
       description: "Available for urgent consultations"
     },
     {
       icon: Linkedin,
       title: "LinkedIn",
-      value: "linkedin.com/in/hellsoft-dev",
-      href: "https://linkedin.com/in/hellsoft-dev",
+      value: "linkedin.com/in/ErikHellman",
+      href: "https://linkedin.com/in/ErikHellman",
       description: "Connect for professional networking"
     },
     {
       icon: Github,
       title: "GitHub",
-      value: "github.com/hellsoft-dev",
-      href: "https://github.com/hellsoft-dev",
+      value: "github.com/ErikHellman",
+      href: "https://github.com/ErikHellman",
       description: "View my open-source contributions"
     }
   ]
